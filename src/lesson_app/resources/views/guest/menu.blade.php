@@ -9,7 +9,7 @@
         <p class="alert alert-danger" role="alert">{{session('err_msg')}}</p>
     @endif
     <div class="category_select">
-        @foreach($categorys as $category)
+        @foreach($categories as $category)
             <a href="{{ route('guest_list_add',['id' => $category->id]) }}">
                 <button class="m-1 btn {{ $category->isClicked() }} m-b">{{ $category->category_name }}</button>
             </a>
@@ -21,6 +21,7 @@
             <table class="table">
                 <thead>
                     <tr>
+                    <th scope="col"></th>
                     <th scope="col"></th>
                     <th scope="col"></th>
                     </tr>

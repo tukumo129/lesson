@@ -14,12 +14,12 @@ class CategoryTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::insert('INSERT INTO categories (category_no,category_name)VALUES(100,"麺類")');
-        DB::insert('INSERT INTO categories (category_no,category_name)VALUES(200,"ごはん料理")');
-        DB::insert('INSERT INTO categories (category_no,category_name)VALUES(300,"肉料理")');
-        DB::insert('INSERT INTO categories (category_no,category_name)VALUES(400,"魚料理")');
-        DB::insert('INSERT INTO categories (category_no,category_name)VALUES(500,"サラダ")');
-        DB::insert('INSERT INTO categories (category_no,category_name)VALUES(600,"スイーツ")');
-        DB::insert('INSERT INTO categories (category_no,category_name)VALUES(700,"飲み物")');
+        DB::insert('INSERT INTO categories (id,category_no,category_name)VALUES(1,100,"麺類")');
+        DB::insert('INSERT INTO categories (id,category_no,category_name)VALUES(2,200,"ごはん料理")');
+        DB::insert('INSERT INTO categories (id,category_no,category_name)VALUES(3,300,"肉料理")');
+        DB::insert('INSERT INTO categories (id,category_no,category_name)VALUES(4,400,"魚料理")');
+        DB::insert('INSERT INTO categories (id,category_no,category_name)VALUES(5,500,"サラダ")');
+        DB::insert('INSERT INTO categories (id,category_no,category_name)VALUES(6,600,"スイーツ")');
+        DB::insert('INSERT INTO categories (id,category_no,category_name)VALUES(7,700,"飲み物")');
     }
 }

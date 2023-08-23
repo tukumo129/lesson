@@ -9,11 +9,16 @@ use Illuminate\Support\Facades\Session;
 class Category extends Model
 {
     use HasFactory;
-    function getCategorys() {
+
+	public function menus()
+    {
+        return $this->hasMany('App\Models\Menu');
+    }
+
+    function getCategories() {
         return Category::get();
     }
     function categoryListAdd($id) {
-        // Session::flush();
         $array = Session::get('category_list', []);
         $delete_key = array_search($id,$array);
         if($delete_key === false) {
